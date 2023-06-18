@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar bg-dark border-bottom border-bottom-dark text-white" data-bs-theme="dark">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">Tic Tac Toe</span>
+          </div>
+        </nav>
+
+  <div class="container text-center">
+    <h1 id="info">Player X's turn</h1>
+    <br><br>
+    <div id="grid">
+      <div class="row">
+        <div class="cell" id="c1" onclick="makeMove(this)"></div>
+        <div class="cell" id="c2" onclick="makeMove(this)"></div>
+        <div class="cell" id="c3" onclick="makeMove(this)"></div>
+      </div>
+      <div class="row">
+        <div class="cell" id="c4" onclick="makeMove(this)"></div>
+        <div class="cell" id="c5" onclick="makeMove(this)"></div>
+        <div class="cell" id="c6" onclick="makeMove(this)"></div>
+      </div>
+      <div class="row">
+        <div class="cell" id="c7" onclick="makeMove(this)"></div>
+        <div class="cell" id="c8" onclick="makeMove(this)"></div>
+        <div class="cell" id="c9" onclick="makeMove(this)"></div>
+      </div>
+    </div>
+    <br><br>
+    <button onclick="resetBoard()" class="btn btn-primary mt-3">Reset Game</button>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
